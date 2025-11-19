@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/responsive.css">
+    <title>Exercício de HTML,CSS e Javascript</title>
+</head>
+
+<body>
+    <main>
+        <div class="conteudo">
+            <h1>FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!
+            </h1>
+            <p>Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de
+                24h.</p>
+        </div>
+
+        <form id="formulario">
+            <div id="inputs">
+                <input type="text" placeholder="Nome *" required>
+                <span class="error-message" id="nome-error"></span>
+                <p class="mensagem-status"></p>
+
+                <input type="email" placeholder="E-mail *" required>
+                <span class="error-message" id="email-error"></span>
+                <p class="mensagem-status"></p>
+
+                <input type="tel" placeholder="Telefone *" required>
+                <span class="error-message" id="telefone-error"></span>
+                <p class="mensagem-status"></p>
+
+                <textarea name="text" id="textaria" placeholder="Texto *"></textarea>
+                <span class="error-message" id="textariaError"></span>
+                <p class="mensagem-status"></p>
+
+            </div>
+            <div class="botao">
+                <p><strong>*Campos Obrigatórios</strong></p>
+                <button type="submit" onclick="enviarFormulario(event)">Enviar</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
