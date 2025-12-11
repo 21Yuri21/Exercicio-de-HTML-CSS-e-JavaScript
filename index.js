@@ -7,9 +7,6 @@ function enviarFormulario(event) {
     errorMessages.forEach((msg) => msg.textContent = '');
 
     inputs.forEach((input) => {
-        const errorId = `${input.placeholder.split(' ')[0].toLowerCase()}-error`;
-        const errorMessage = document.getElementById(errorId);
-
         if (input.value.trim() === '') {
             formularioValido = false;
             input.classList.add('invalid');
@@ -32,7 +29,6 @@ function enviarFormulario(event) {
     const statusMessages = document.querySelectorAll('.mensagem-status');
     if (formularioValido) {
         statusMessages.forEach(status => {
-            status.texto = (remove)
             status.style.color = '#28a745';
         });
     } else {
